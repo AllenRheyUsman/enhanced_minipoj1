@@ -1,1 +1,165 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Sacramento&family=Sono&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(page.png);
+            
+           
+            font-family: 'Delicious Handrawn', cursive;
+        font-size: 30px;}
+        
+    </style>
+</head>
+
+
+<body class="pt-5">
+    <!-- <div class="container">
+        <form action="">
+            <h2>length converter</h2>
+        
+        <input type="text" id="inputInches" placeholder="Input numbers">
+        <button type="button" onclick="convertLength()">Convert</button>
+        <div>meters: <input type="text" id="meters"></div>
+        <div>centimeter: <input  id="centimeters"></input></div>
+        <div>millimeters <input  id="millimeters"></input></div>
+
+    
+</form>
+</div> -->
+
+
+<div class="d-flex justify-content-center mt-5 ">
+    <div class="d-flex justify-content-center mt-5 ">
+        <form action="" class="text-center ">
+            <input type="text" id="name1">
+            <img src="heart.png" alt="">
+            <input type="text" id="name2">
+            <p id="flames"></p>
+            <br><br>
+        <button type="button" onclick="lovescores()" id="flamed">Flames</button>
+        <br><br><br>
+    <p id="result"class=" container-sm text-wrap">
+       
+    </p>
+    </form>
+</div>
+</div>
+
+
+    <script>
+        // function convertLength(){
+        //     inches=document.getElementById("inputInches").value;
+       
+        // meters=inches*0.0254;
+        // centimeters=inches*2.54;
+        // millimeters=inches*25.4;
+
+        // document.getElementById("meters").innerHTML=meters;
+        // document.getElementById("centimeters").value=centimeters;
+        // document.getElementById("millimeters").value=millimeters;
+        // }
+
+
+            // n=Math.random();
+            // console.log(n);
+            // n=n*3;
+            // n=Math.floor(n+1);
+
+                
+                function lovescores(){
+
+                    var name1= document.getElementById("name1").value;
+                    var name2= document.getElementById("name2").value;
+                
+                    
+                    lovescore=Math.random();
+                    lovescore=lovescore*100;
+                    lovescore=Math.floor(lovescore+1);
+
+                let output;  
+
+                    if (lovescore>=90){
+                        output=("Pak! To the moon ang future ni "+name1 +" at "+name2);
+                    }
+                    else if (lovescore>=80){
+                        output=(" Lumiliwanang ang buhay ng tambalang "+name1 +" at "+name2)
+                    }
+                    else if (lovescore>=70){
+                        output=("Buti pa ang corporations may partners.")
+                    }
+                    else if (lovescore>=60){
+                        output=("Kapag puso ang nagsalita, wala ng boses ang utak nitong si " +name1 +"pero malay mo sa huli mapapasayo rin si "+name2)
+                    }
+                    else if (lovescore>=50){
+                        output=("Kung hindi ri naman handang magmahal sayo iyo si "+name2+ ", dapat naman, kusa niyang susuklian ito. ")
+                    }
+                    else if (lovescore>=40){
+                        output=("Minsan kailangan mo ring tanggapin, "+name1+" na hindi nababagay ang talong sa champorado")
+                    }
+                    else if (lovescore>=30){
+                        output=("Buti pa ang camera nginingitian ni"+name2+" Buti pa ang kasali sa tagutaguan hinahanap")
+                    }
+                    else if (lovescore>=20){
+                        output=("Di ako stethoscope na alam ang tibok ng puso ni"+name2+"pero alam kong hindi ka suweldo na aabangan niya")
+                    }
+                    else{
+                        output=("Buti pa ang halaman nadidiligan Humanap ka na lang ng ibang mapagtatampisawan ng uhaw mong puso")
+                    }
+                    
+
+
+                    document.getElementById("result").innerHTML=(output);
+                    
+                    
+                }
+
+//                 let output;
+// if (unitInput == "inches") {
+//   output = (userInput+" inches");
+
+
+// } else if (unitInput == "centimeters") {
+//   const centimeter = userInput / 2.54;
+//   output = ( centimeter +"inches")
+
+// } else if (unitInput == "feet") {
+//   const feet = userInput * 12;
+//   output = (feet + "inches")
+
+// } else {
+//   alert("Invalid unit of measurement entered.");
+// }
+
+
+// if (output) {
+//     document.getElementById("result").innerHTML =output;
+// }
+
+
+
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+
+ 
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
