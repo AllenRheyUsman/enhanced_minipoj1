@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var image = document.getElementById("kulas");
   var paragraph = document.querySelector(".moro");
 
@@ -101,7 +100,6 @@ var image = document.getElementById("kulas");
   image10.addEventListener("mouseout", function() {
     paragraph10.style.display = "none";
   });
-=======
 var image = document.getElementById("kulas");
   var paragraph = document.querySelector(".moro");
 
@@ -204,4 +202,3 @@ var image = document.getElementById("kulas");
   image10.addEventListener("mouseout", function() {
     paragraph10.style.display = "none";
   });
->>>>>>> 0755e5f52b670a2b8d95f27be47150299052508f
